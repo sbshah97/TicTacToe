@@ -105,8 +105,11 @@ public class TicTacToe {
 
 	public static void printBoard () {
 		for(int i = 0 ; i < ROWS ; i ++) {
+            System.out.print("\t");
 			for(int j = 0 ; j < COLUMNS ; j ++) {
 				printCell(board[i][j]);
+				if(j != COLUMNS - 1)
+					System.out.print("| ");
 			}
 			System.out.println();
 		}
@@ -115,13 +118,13 @@ public class TicTacToe {
 	public static void printCell(int x) {
 		switch (x) {
 			case EMPTY:
-				System.out.print("   ");
+				System.out.print("- ");
 				break;
 			case CROSS:
-				System.out.print(" X ");
+				System.out.print("X ");
 				break;
 			case OH:
-				System.out.print(" O ");
+				System.out.print("O ");
 				break;
 		}
 	}
