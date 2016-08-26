@@ -3,14 +3,18 @@ import java.lang.*;
 
 public class TicTacToe {
 	/**
-	*
+	* The cells are represented by numbers
+	* instead of strings to allow for 
+	* easier calculations.
 	*/
 	public static final int EMPTY = 0;
 	public static final int CROSS = 1;
 	public static final int OH = 2;
 
 	/**
-	*
+	* The playing state of the game
+	* is used by numbers(constants) for
+	* reducing the complexity
 	*/
 	public static final int PLAYING = 0 ;
 	public static final int DRAW = 1;
@@ -18,7 +22,7 @@ public class TicTacToe {
 	public static final int OH_WON = 3;
 
 	/**
-	*
+	* 
 	*/
 	public static final int ROWS = 3, COLUMNS = 3;
 	public static int[][] board = new int[ROWS][COLUMNS];
@@ -60,17 +64,19 @@ public class TicTacToe {
 	}
 
 	public static void playerMove(int currentPlayer) {
-		System.out.println("Enter your choice between 1- 3");
-		int row = scan.nextInt() - 1;
-		int column = scan.nextInt() - 1;
+		System.out.println("Enter your choice between 0 - 2");
+		currentRow = scan.nextInt();
+		currentColumn = scan.nextInt();
 
-		board[row][column] = currentPlayer;
+		board[currentRow][currentColumn] = currentPlayer;
 
 	} 
 
 	public static void updatePlayer (int currentPlayer, int currentRow, int currentColumn) {
-		if(winGame(currentPlayer, currentRow, currentColumn)) 
+		if(winGame(currentPlayer, currentRow, currentColumn)) {
 			currentState = (currentPlayer == CROSS) ? CROSS_WON : OH_WON;
+			System.out.println("WinGame returned true");
+		}
 		else if(drawGame()) 
 			currentState = DRAW;			
 	}
@@ -114,11 +120,11 @@ public class TicTacToe {
 			System.out.println();
 		}
 	}
-
+	
 	public static void printCell(int x) {
 		switch (x) {
 			case EMPTY:
-				System.out.print("- ");
+				System.out.print("  ");
 				break;
 			case CROSS:
 				System.out.print("X ");
