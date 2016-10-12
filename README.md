@@ -20,8 +20,7 @@ Next should be fairly simple to follow.
 This is primarily built as a recreational tool for students.
 
 ## Contributing
-- The repository is open to contribution from all interested developers. Kindly send us Pull Requests with explanation as to what changes you have done.
-- Also, you can write to us by opening an [Issue](https://github.com/salman-bhai/TicTacToe/issues) and also solve a current issue if possible.
+- To contribute refer to https://github.com/salman-bhai/TicTacToe/blob/master/CONTRIBUTING.md
 - A detailed explanantion of how we came to building this software is maintained at the [Wiki](https://github.com/salman-bhai/TicTacToe/wiki) page.
 - This repository was created and is currently maintained by @[salman-bhai](https://github.com/salman-bhai).
 
