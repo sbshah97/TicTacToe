@@ -64,10 +64,18 @@ public class TicTacToe {
 	}
 
 	public static void playerMove(int currentPlayer) {
-		System.out.println("Enter your choice between 0 - 2");
-		currentRow = scan.nextInt();
-		currentColumn = scan.nextInt();
-
+		boolean isInBounds = false;
+		do{
+			System.out.println("Enter your choice between 0 - 2");
+			currentRow = scan.nextInt();
+			currentColumn = scan.nextInt();
+			boolean inBoundsRow = (currentRow >= 0) && (currentRow < board.length);
+			boolean inBoundsColumn = (currentColumn >= 0) && (currentColumn < board[0].length);
+			isInBounds = (inBoundsRow && inBoundsColumn);
+			if(isInBounds==false){
+				System.out.println("Please enter a valid choice...");
+			}
+		}while(isInBounds==false);
 		board[currentRow][currentColumn] = currentPlayer;
 
 	} 
