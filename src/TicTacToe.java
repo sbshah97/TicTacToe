@@ -65,6 +65,7 @@ public class TicTacToe {
 
 	public static void playerMove(int currentPlayer) {
 		boolean isInBounds = false;
+		boolean isValidOverwritten = false;
 		do{
 			System.out.println("Enter your choice between 0 - 2");
 			currentRow = scan.nextInt();
@@ -72,10 +73,13 @@ public class TicTacToe {
 			boolean inBoundsRow = (currentRow >= 0) && (currentRow < board.length);
 			boolean inBoundsColumn = (currentColumn >= 0) && (currentColumn < board[0].length);
 			isInBounds = (inBoundsRow && inBoundsColumn);
-			if(isInBounds==false){
-				System.out.println("Please enter a valid choice...");
+			if(isInBounds){
+				isValidOverwritten = (board[currentRow][currentColumn]==0);
 			}
-		}while(isInBounds==false);
+			if(isInBounds==false || isValidOverwritten==false){
+				System.out.println("Please enter a valid choice...");
+			} 
+		}while(isInBounds==false || isValidOverwritten==false);
 		board[currentRow][currentColumn] = currentPlayer;
 
 	} 
