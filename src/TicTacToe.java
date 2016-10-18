@@ -34,7 +34,7 @@ public class TicTacToe {
 	*/
 	public static void main(String args[]) {
 		scan = new Scanner(System.in);
-		//Initialise Game
+		//Initialize Game
 		initGame();
 
 		//Iterate around a while loop to 
