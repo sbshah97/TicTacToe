@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 
-public class Tic_Tac_Toe {
+public class TicTacToe {
 	
     private static Grid_button[][] t = new Grid_button[3][3];
     static int turn = 1;
@@ -28,6 +28,7 @@ public class Tic_Tac_Toe {
     static JButton user_vs_ai;
     static JButton cpu_vs_ai;
     static Timer timer ;
+    
 	// ************************************************
     public static void make_button_unclickable ()
     {
@@ -215,7 +216,7 @@ public class Tic_Tac_Toe {
 			if (grid.status()==1)
 			{
 				if (turn == 1)
-					result.setText(user2 + " WINS");
+					result.setText(user1 + " WINS");
 				else 
 					result.setText("AI WINS");
 				user_vs_ai.setForeground(Color.BLACK);
@@ -236,7 +237,7 @@ public class Tic_Tac_Toe {
 			if (grid.status()==1)
 			{
 				if (turn == 1)
-					result.setText(user2 + " WINS");
+					result.setText(user1 + " WINS");
 				else 
 					result.setText("AI WINS");
 				make_button_unclickable ();

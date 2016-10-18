@@ -64,21 +64,21 @@ public class Board {
 					count2++;
 			}
 			if (count1==3){
-				Tic_Tac_Toe.setcolor(i,0,i,1,i,2);
+				TicTacToe.setcolor(i,0,i,1,i,2);
 				return 1;
 			}	
 			if (count2 == 3)
 			{
-				Tic_Tac_Toe.setcolor(0,i,1,i,2,i);
+				TicTacToe.setcolor(0,i,1,i,2,i);
 				return 1;
 			}
 		}
 		if (q[0][0] == q[1][1] && q[1][1]==q[2][2] && q[1][1]!='-'){
-			Tic_Tac_Toe.setcolor(0,0,1,1,2,2);
+			TicTacToe.setcolor(0,0,1,1,2,2);
 			return 1; // win
 		}
 		else if (q[0][2] == q[1][1] && q[1][1]==q[2][0] && q[1][1]!='-'){
-			Tic_Tac_Toe.setcolor(0,2,1,1,2,0);
+			TicTacToe.setcolor(0,2,1,1,2,0);
 			return 1;
 		}
 		for (int i=0;i<3;i++)

@@ -22,7 +22,7 @@ public class Grid_button extends JButton {
             @Override
             public void actionPerformed(ActionEvent e) {
             	boolean text = false;
-            	if (Tic_Tac_Toe.turn == 1 && getText()=="")
+            	if (TicTacToe.turn == 1 && getText()=="")
             	{
             		setText("X");
             		text=true;
@@ -36,12 +36,12 @@ public class Grid_button extends JButton {
             	}
             	if (text){
 	            	try {
-						Tic_Tac_Toe.user_vs_user(fX,fY);
+						TicTacToe.user_vs_user(fX,fY);
 					} catch (InterruptedException e1) {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
-	            	Tic_Tac_Toe.turn = Tic_Tac_Toe.turn*-1;
+	            	TicTacToe.turn = TicTacToe.turn*-1;
             	}
             }
 
