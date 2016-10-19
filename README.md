@@ -1,7 +1,9 @@
 # TicTacToe
-- This is a game of Tic Tac Toe that can be played against another human opponent.
-- Both users will get to choose their row and column between 1-3 which they want to play against the opponent. 
+- This is a game of Tic Tac Toe (with GUI) has four options - user vs user , user vs cpu (where cpu plays randomly), user vs AI and cpu vs AI.
+- After clicking the start game button user can choose any of the 4 options and make your move by clicking on the grid buttons.
+- For options where there is a user playing , the user can enter his name. 
 - First user to get three spaces in a row/column or diagonally wins!
+- After the game ends user can start a new game by again clicking on any of the options.
 
 ## Installation
 - Fork this project to your GitHub account.
