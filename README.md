@@ -1,4 +1,7 @@
 # TicTacToe
+
+## About
+
 - This is a game of Tic Tac Toe (with GUI) has four options - user vs user , user vs cpu (where cpu plays randomly), user vs AI and cpu vs AI.
 - After clicking the start game button user can choose any of the 4 options and make your move by clicking on the grid buttons.
 - For options where there is a user playing , the user can enter his name. 
@@ -30,3 +33,7 @@ This is primarily built as a recreational tool for students.
 ## License
 - The software is registered under the [MIT License](https://github.com/salman-bhai/TicTacToe/blob/master/LICENSE)
 
+## To Do
+- [ ] Code Documentation
+- [ ] Unit Test Cases for each unit in the code!
+- [ ] Dividing into modules or objects and refining the logic further!
