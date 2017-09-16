@@ -29,7 +29,7 @@ public class TicTacToe {
     static JButton cpu_vs_ai;
     static Timer timer ;
     
-	// ************************************************
+	//
     public static void make_button_unclickable () {
     	for (int i =0 ;i<3;i++) {
     		for (int j=0 ; j<3 ;j++) {
@@ -39,7 +39,7 @@ public class TicTacToe {
     	}
     }
     
-	// ************************************************
+	//
     public static void make_button_clickable (){
     	for (int i =0 ;i<3;i++) {
     		for (int j=0 ; j<3 ;j++) {
@@ -53,7 +53,7 @@ public class TicTacToe {
     }
     
     
-	// ************************************************
+	//
     // WHEN GRID BUTTON IS CLICKED
 	public static void user_vs_user (int x1 , int y1 ) throws InterruptedException  {
 		if (c1 == 1 && c2 == 1 ) {
@@ -229,11 +229,9 @@ public class TicTacToe {
 		}
 	}
 	
-	// ************************************************
-	// WINDOW TO TAKE USER NAMES
-	public static void user_names () {
+	// WINDOW TO TAKE USER NAMEpublic static void user_names () {
 		JFrame frame3 = new JFrame();
-		frame3.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		frame3.setDefaultCloseperation(JFrame.DISPOSE_ON_CLOSE);
 		frame3.setSize(300,200);
 		Container user_name1 = new JPanel();
 		
@@ -313,7 +311,7 @@ public class TicTacToe {
 		frame3.setVisible(true);
 	}
 	
-	// ************************************************
+	//
 	//ADD NEW WINDOW WHEN START BUTTON IS CLICKED
 	public static void add_new_window () {
 		JFrame frame2 = new JFrame("GAME");
@@ -445,9 +443,7 @@ public class TicTacToe {
 		frame2.setVisible(true);
 	}
 
-	// ************************************************
-	// MAIN FUNCTION AND HOME FRAME
-	
+	// MAIN FUNCTION AND HOME FRAME	
 	public static void main(String[] args) {
 		// menu frame
 		JFrame frame = new JFrame ();
